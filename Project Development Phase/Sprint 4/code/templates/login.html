@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet"href="{{url_for('static',filename='coding.css')}}">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+  <form action="/login" method="post">
+    <div class="full-page">
+        <div class="sub-page">
+            <div class="navigation-bar">
+                <div class="logo">
+                    <a href='login.html'></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="form-box">
+                        <div class="form">
+                            <form class="login-form">
+                                <center><h1 class="main-heading">Login Form</h1></center>
+                                <br>
+                                <input type="text" name="username" placeholder="Enter Your Username" size="15" /> 
+                                <br>
+                                <input type="text" name="password" placeholder="Enter Your password" size="15" />
+				                <button>
+                                    <input type="submit" value="LOGIN" />
+                                </button>
+                               
+                            </form>
+                         </div>
+	                </div>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js'>
+    </script>
+    <script>
+        $('.message a').click(function(){$('form').animate({height: "toggle",opacity: "toggle"},"slow");});
+    </script>
+  </form> 
+</body>
+</html>
