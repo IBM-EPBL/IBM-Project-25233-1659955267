@@ -1,0 +1,53 @@
+<html>
+
+	<head>
+		<link rel="stylesheet"href="{{url_for('static',filename='coding1.css')}}">
+ 
+	</head>
+	<body>
+<div>
+	<center>
+	
+    <div class="name"><span></span>
+     <div class="val"> 
+            {% for val in data %}
+            <div>{{val}}</div>
+            {% endfor %} 
+		</div>
+
+	    {% if state == "SENT" %}
+</center>
+        
+	    <center>
+	    <div class="content " >
+			<h1>Request Email Sent Successfully...! </h1>
+		</div>
+		</center
+		
+		
+	    {% else %}
+	    <form action="/send_email" method="post">
+			<div class="content " >
+				<h1>Requesting plasma!!!<h1></div>
+			<br>
+
+			<br>
+			
+			<label> Blood Group:</label>
+		    <input type="text" name="bloodgroup" value="{{bloodgroup}}" placeholder="Enter BloodGroup"/>
+			<br>
+			<br>
+			<br>
+			<label> Email:</label>
+		    <input type="text" name="email1" placeholder="Enter Email"/>
+			<br>
+
+			<br>
+	        <button type="submit" class="button1">NOTIFY</button> 
+	    </form>
+	    {% endif %}
+	
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<Html>
+
+    <head>
+        <title>Registration form</title>
+        <link rel="stylesheet"href="{{url_for('static',filename='profile.css')}}">
+    </head>
+    
+    <center>
+        
+        <h1 class="word"></h1>
+    </center>
+    <body>
+  
+        <div class="nav">
+            <div class="logo">
+              <a href="/userdashboard">  <i class="fas fa-arrow-left"></i></a>
+               <center> <h3>Recipient Registration</h3></center>
+            </div>
+            
+        </div>
+        <div class="cont" align="center" >
+          
+          <h3>
+          <div class="profile">
+          <h3>
+            <form action="{{ url_for('registers') }}" method="post">
+                <table>
+                    <tr>
+                      <th>Name:</th>
+                      <td><input type="text" name="username" size="15" /></td>
+                    </tr>
+                    <tr>
+                        <th>Age:</th>
+                        <td><input type="text" name="age" size="15" /></td>
+                      </tr>
+                      <tr>
+                        <th>Bloodgroup:</th>
+                        <td><input type="text" name="bloodgroup" size="15" /></td>
+                      </tr>
+                      <tr>
+                        <th>Gender:</th>
+                        <td><input type="text" name="gender" size="15" /></td>
+                      </tr>
+                      <tr>
+                        <th>Phone:</th>
+                        <td><input type="text" name="phone" size="15" /></td>
+                      </tr>
+                      <tr>
+                        <th>Address:</th>
+                        <td><input type="text" name="address" size="15" /></td>
+                      </tr>
+                      <tr>
+                        <th>Email:</th>
+                        <td><input type="text" name="email" size="15" /></td>
+                      </tr>
+                      <tr>
+                        <th>Password:</th>
+                        <td><input type="text" name="password" size="15" /></td>
+                      </tr>
+                      <tr>
+                        <th>Confirm Password:</th>
+                        <td><input type="text" name="confirmpassword" size="15" /></td>
+                      </tr>
+                      <tr>
+                        <th>Height:</th>
+                        <td><input type="text" name="height" placeholder="Please write your height in centimetres" size="15" /></td>
+                      </tr>
+                      <tr>
+                        <th>Weight:</th>
+                        <td><input type="text" name="weight" placeholder="Please write your weight in centimetres" size="15" /></td>
+                      </tr>
+                      
+                </table>
+                <div class="cont" align="center" >
+                  <button><input type="submit" value="REGISTER" /></button>
+                  </div>
+                
+                
+            </form>
+            
+    
+          </div>
+        </div>
+      </div>
+    </body>
+    
+    </html>

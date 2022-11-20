@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet"href="{{url_for('static',filename='styles.css')}}">
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .content{
+        width: 1200px;
+        height: auto;
+        margin: auto;
+        position: relative;
+    }
+    
+    .content .par{
+        padding-left: 25px;
+        padding-bottom: 25px;
+        font-family: Arial;
+        color: beige;
+        letter-spacing: 1.2px;
+        line-height: 30px;
+    }
+    
+    .content h1{
+        font-family: 'Times New Roman';
+        font-size: 50px;
+        padding-left: 20px;
+        margin-top: 9%;
+        color: red;
+        letter-spacing: 2px;
+    }
+    
+    .content .cn{
+        width: 160px;
+        height: 40px;
+        background: #ff7200;
+        border: none;
+        margin-bottom: 10px;
+        margin-left: 20px;
+        font-size: 18px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: .4s ease;
+        
+    }
+    
+    .content .cn a{
+        text-decoration: none;
+        color: #000;
+        transition: .3s ease;
+    }
+    
+    .content span{
+        color: #ff7200;
+        font-size: 65px
+    }
+
+</style>
+</head>
+<body>
+    <div class="full-page">
+        <div class="navbar">
+            <div>
+                <a href='index.html'></a>
+            </div>
+            <nav>
+                <ul id='MenuItems'>
+                    <li><a href='#'>HOME</a></li>
+                    <li><a href="{{'login'}}">LOGIN</a></li>
+                    <li><a href="{{'register'}}">DONATE PLASMA</a></li>
+                    <li><a href="{{'registers'}}">NEED PLASMA? </a></li>
+                </ul>
+                
+            </nav>
+        </div>
+        <div class="content">
+            <h1>PLASMA  DONOR<br>WEB APPLICATION</h1>
+            <br>
+
+
+
+            <br>
+            <p class="par"> “Blood Donation Costs You Nothing,<br> But It Can Mean The World To Someone In Need.”</p>
+    </div>
+    
+</body>
+</html>
