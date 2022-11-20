@@ -1,0 +1,64 @@
+*
+
+{
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+.mail
+
+{    
+    height: 100%;
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+    
+    background-color: bisque;
+
+   
+
+}
+
+.name
+
+{
+
+    background-color:bisque;
+    height: 100%;
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+    
+
+}
+.main-heading
+
+{
+
+    color: rgb(255, 0, 0);
+
+    padding-bottom: 20px;
+
+}
+.content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    position: relative;
+}
+
+.content h1{
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 20px;
+    
+    color: red;
+    letter-spacing: 2px;
+}
+
